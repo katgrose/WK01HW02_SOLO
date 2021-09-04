@@ -33,7 +33,7 @@ public class Users {
         return usersList;
     }
 
-    private int id_iter = 1;
+    private static int id_iter = 1;
     public Users(String username, String password) {
         this.userID = id_iter++;
         this.username = username;
