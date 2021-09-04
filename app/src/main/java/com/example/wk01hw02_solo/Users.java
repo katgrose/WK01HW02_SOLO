@@ -69,8 +69,14 @@ public class Users {
             if(user.getUsername().equals(username)) {
                 return user;
             }
-            Log.i("getUser", username + " " + user.getUsername());
         }
         return null;
+    }
+
+    public static boolean verifyPassword(String pass, Users user) {
+        if(!user.getPassword().equals(pass)) {
+            return false;
+        }
+        return true;
     }
 }

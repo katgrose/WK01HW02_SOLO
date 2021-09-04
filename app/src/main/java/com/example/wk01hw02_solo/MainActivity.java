@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         if (activeUser == null) {
             Toast.makeText(MainActivity.this, "Bad Username", Toast.LENGTH_SHORT).show();
         }
-        else if (!activeUser.getPassword().equals(pass)) {
+        else if (!Users.verifyPassword(pass, activeUser)) {
             Toast.makeText(MainActivity.this, "Bad Password", Toast.LENGTH_SHORT).show();
         }
         else {
