@@ -52,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Login Clicked", Toast.LENGTH_SHORT).show();
             }
         });
+
+        // just testing something
     }
 
 //    public void loginFunction() {
